@@ -1,4 +1,6 @@
 # Laravel Rules
+[![Tests](https://github.com/Anteris-Dev/laravel-rules/actions/workflows/test.yaml/badge.svg)](https://github.com/Anteris-Dev/laravel-rules/actions/workflows/test.yaml)
+[![Style](https://github.com/Anteris-Dev/laravel-rules/actions/workflows/style.yaml/badge.svg)](https://github.com/Anteris-Dev/laravel-rules/actions/workflows/style.yaml)
 
 This package adds classes that strongly type the [Laravel Validation Rules](https://laravel.com/docs/8.x/validation#available-validation-rules). Currently these classes cannot be used with the default Laravel Validator, though that is our long-term goal.
 
