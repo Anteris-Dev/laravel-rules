@@ -1,0 +1,34 @@
+{
+    "name": "anteris-dev/laravel-rules",
+    "description": "Strongly typed Laravel validation attributes.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aidan Casey",
+            "email": "aidan.casey@anteris.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Anteris\\LaravelRules\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Anteris\\Tests\\LaravelRules\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "illuminate/validation": "^v8.42.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "vimeo/psalm": "^4.0"
+    },
+    "scripts": {
+        "coverage": "XDEBUG_MODE=coverage ./vendor/bin/phpunit --coverage-html ./coverage",
+        "test": "./vendor/bin/phpunit",
+        "static-analysis": "./vendor/bin/psalm --no-cache"
+    }
+}

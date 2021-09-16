@@ -1,0 +1,20 @@
+<?php
+
+namespace Anteris\LaravelRules;
+
+use Anteris\LaravelRules\Contracts\Rule;
+use Attribute;
+
+/**
+ * The field under validation must be a successfully uploaded file.
+ *
+ * @see https://laravel.com/docs/8.x/validation#rule-file
+ */
+#[Attribute(Attribute::TARGET_PROPERTY)]
+class File implements Rule
+{
+    public function getRules(): array
+    {
+        return ['file'];
+    }
+}
